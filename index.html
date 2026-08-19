@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Manish Kumar Singh | AI/ML Python Developer | Klypto
+  </title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #eef2f6;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #eef2f6;
+      color: #233447;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* PAGE */
+
+    .page {
+      width: 100%;
+      padding: 48px 20px;
+    }
+
+    .email {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: #ffffff;
+      border-radius: 22px;
+      box-shadow:
+        0 24px 70px rgba(11, 30, 51, 0.14),
+        0 4px 16px rgba(11, 30, 51, 0.05);
+    }
+
+    /* SUBJECT */
+
+    .subject-bar {
+      padding: 13px 56px;
+      background: #081827;
+      color: #aebdca;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+    }
+
+    .subject-bar strong {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 62px 58px 58px;
+      background:
+        radial-gradient(
+          circle at 92% 10%,
+          rgba(245, 124, 0, 0.25),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 15% 110%,
+          rgba(255, 255, 255, 0.07),
+          transparent 34%
+        ),
+        linear-gradient(
+          135deg,
+          #0b1e33 0%,
+          #12304d 52%,
+          #1a3a5c 100%
+        );
+      color: #ffffff;
+    }
+
+    .hero-circle {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -105px;
+      bottom: -125px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 50%;
+    }
+
+    .hero-circle::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      top: 39px;
+      left: 39px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      color: #f9a825;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-mark {
+      width: 30px;
+      height: 2px;
+      background: #f57c00;
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      margin: 0;
+      font-size: 46px;
+      font-weight: 780;
+      line-height: 1.1;
+      letter-spacing: -1.6px;
+    }
+
+    .hero h1 span {
+      color: #f9a825;
+    }
+
+    .role {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 28px;
+      padding: 12px 17px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #d9e4ee;
+      font-size: 14px;
+    }
+
+    .role strong {
+      color: #ffffff;
+    }
+
+    .role-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f57c00;
+    }
+
+    /* CONTENT */
+
+    .content {
+      padding: 54px 58px 24px;
+    }
+
+    .opening {
+      margin: 0 0 44px;
+      color: #394b5d;
+      font-size: 18px;
+      line-height: 1.78;
+    }
+
+    .opening strong {
+      color: #0b1e33;
+    }
+
+    /* SECTION */
+
+    .section {
+      padding: 34px 0;
+      border-top: 1px solid #e7edf3;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 17px;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
+      border-radius: 8px;
+      background: #fff3e0;
+      color: #e86f00;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .section h2 {
+      margin: 0;
+      color: #0b1e33;
+      font-size: 22px;
+      font-weight: 780;
+      letter-spacing: -0.4px;
+    }
+
+    .section p {
+      margin: 0;
+      color: #5a6b7c;
+      font-size: 15.5px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience-box {
+      margin-top: 22px;
+      padding: 23px 25px;
+      border-left: 4px solid #f57c00;
+      border-radius: 0 13px 13px 0;
+      background:
+        linear-gradient(
+          90deg,
+          #fff8f1,
+          #ffffff
+        );
+    }
+
+    .experience-title {
+      margin-bottom: 7px;
+      color: #0b1e33;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .experience-box p {
+      color: #4c5f70;
+      font-size: 15px;
+    }
+
+    .experience-box strong {
+      color: #0b1e33;
+    }
+
+    /* PROJECTS */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 23px;
+    }
+
+    .project {
+      min-height: 100%;
+      padding: 25px;
+      border: 1px solid #e3eaf1;
+      border-radius: 15px;
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #f8fafc 100%
+        );
+    }
+
+    .project-tag {
+      display: inline-block;
+      margin-bottom: 13px;
+      padding: 5px 10px;
+      border-radius: 30px;
+      background: #eaf2f8;
+      color: #1a3a5c;
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .project h3 {
+      margin: 0 0 9px;
+      color: #0b1e33;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .project p {
+      font-size: 14px;
+      line-height: 1.68;
+    }
+
+    .project-result {
+      display: inline-block;
+      margin-top: 18px;
+      color: #e86f00;
+      font-size: 18px;
+      font-weight: 850;
+    }
+
+    /* PIPELINE */
+
+    .pipeline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 9px;
+      margin-top: 24px;
+    }
+
+    .pipeline-step {
+      padding: 10px 14px;
+      border: 1px solid #dce5ed;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #17344f;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .pipeline-arrow {
+      color: #f57c00;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    /* STACK */
+
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+      margin-top: 22px;
+    }
+
+    .stack-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 17px;
+      border-radius: 12px;
+      background: #f6f9fc;
+    }
+
+    .stack-marker {
+      width: 8px;
+      height: 8px;
+      flex: 0 0 8px;
+      margin-top: 8px;
+      border-radius: 50%;
+      background: #f57c00;
+      box-shadow: 0 0 0 5px rgba(245, 124, 0, 0.09);
+    }
+
+    .stack-item h4 {
+      margin: 0 0 3px;
+      color: #0b1e33;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .stack-item p {
+      margin: 0;
+      color: #6b7c8d;
+      font-size: 12.5px;
+      line-height: 1.55;
+    }
+
+    /* RESEARCH */
+
+    .research {
+      margin-top: 22px;
+      padding: 24px 25px;
+      border: 1px solid #e1e8ef;
+      border-radius: 14px;
+      background: #f9fbfd;
+    }
+
+    .research-label {
+      margin-bottom: 8px;
+      color: #f57c00;
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .research h3 {
+      margin: 0 0 7px;
+      color: #0b1e33;
+      font-size: 18px;
+    }
+
+    .research p {
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      margin: 38px 0 16px;
+      padding: 37px 32px;
+      border-radius: 17px;
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 90% 0%,
+          rgba(245, 124, 0, 0.2),
+          transparent 28%
+        ),
+        linear-gradient(
+          135deg,
+          #0b1e33,
+          #1a3a5c
+        );
+      color: #ffffff;
+    }
+
+    .cta h2 {
+      margin: 0 0 10px;
+      font-size: 26px;
+      font-weight: 780;
+      letter-spacing: -0.5px;
+    }
+
+    .cta p {
+      max-width: 540px;
+      margin: 0 auto 25px;
+      color: #d4e0eb;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 9px;
+      background: #f57c00;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 8px 22px rgba(245, 124, 0, 0.28);
+    }
+
+    /* LINKS */
+
+    .links {
+      padding: 31px 0 12px;
+    }
+
+    .links-title {
+      margin-bottom: 16px;
+      color: #0b1e33;
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .link {
+      display: inline-block;
+      padding: 10px 15px;
+      border: 1px solid #dce5ed;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #1a3a5c;
+      font-size: 13px;
+      font-weight: 750;
+      transition: all 0.2s ease;
+    }
+
+    .link:hover {
+      border-color: #f57c00;
+      color: #e86f00;
+      transform: translateY(-1px);
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 38px 58px;
+      border-top: 1px solid #e2e9ef;
+      background: #f5f8fb;
+    }
+
+    .name {
+      margin-bottom: 5px;
+      color: #0b1e33;
+      font-size: 21px;
+      font-weight: 850;
+      letter-spacing: -0.4px;
+    }
+
+    .designation {
+      margin-bottom: 21px;
+      color: #e86f00;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 11px 24px;
+      color: #68798a;
+      font-size: 13px;
+    }
+
+    .contact strong {
+      color: #435567;
+    }
+
+    .contact a {
+      color: #1a3a5c;
+      font-weight: 700;
+    }
+
+    .footer-note {
+      margin-top: 27px;
+      padding-top: 19px;
+      border-top: 1px solid #e0e7ed;
+      color: #8997a4;
+      font-size: 11px;
+    }
+
+    /* MOBILE */
+
+    @media only screen and (max-width: 680px) {
+
+      .page {
+        padding: 0;
+      }
+
+      .email {
+        border-radius: 0;
+      }
+
+      .subject-bar {
+        padding: 13px 24px;
+      }
+
+      .hero {
+        padding: 48px 28px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .content {
+        padding: 38px 28px 12px;
+      }
+
+      .footer {
+        padding: 32px 28px;
+      }
+
+      .projects,
+      .stack-grid,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .opening {
+        font-size: 16.5px;
+      }
+
+      .pipeline {
+        gap: 7px;
+      }
+
+      .pipeline-step {
+        font-size: 12px;
+      }
+
+      .pipeline-arrow {
+        display: none;
+      }
+
+      .cta {
+        padding: 30px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <main class="email">
+
+
+      <!-- SUBJECT LINE -->
+
+      <div class="subject-bar">
+        <strong>Suggested subject:</strong>
+        AI/ML Python Developer | Manish Kumar Singh | End to End AI Builder
+      </div>
+
+
+      <!-- HERO -->
+
+      <section class="hero">
+
+        <div class="hero-circle"></div>
+
+        <div class="eyebrow">
+          <span class="eyebrow-mark"></span>
+          Job Application
+        </div>
+
+        <h1>
+          I build AI systems<br>
+          that <span>ship.</span>
+        </h1>
+
+        <div class="role">
+
+          <span class="role-dot"></span>
+
+          Applying for
+          <strong>AI/ML Python Developer</strong>
+
+          at
+          <strong>Klypto</strong>
+
+        </div>
+
+      </section>
+
+
+      <!-- CONTENT -->
+
+      <section class="content">
+
+
+        <!-- OPENING -->
+
+        <p class="opening">
+
+          Hi Klypto Team,
+
+          <br><br>
+
+          Your role asks for 2 to 5 years of experience. I am a fresher, so I
+          will not pretend otherwise.
+
+          <br><br>
+
+          What I can bring is something I have spent my time deliberately
+          building: <strong>the ability to take an AI problem from an idea to
+          a working system.</strong>
+
+          <br><br>
+
+          I am <strong>Manish Kumar Singh</strong>, a B.E. graduate in
+          Artificial Intelligence and Data Science from RNS Institute of
+          Technology. My work has focused on building practical AI systems
+          across machine learning, Generative AI, APIs, retrieval systems,
+          containerization, and deployment.
+
+        </p>
+
+
+        <!-- EXPERIENCE -->
+
+        <section class="section">
+
+          <div class="section-head">
+
+            <span class="number">01</span>
+
+            <h2>
+              Experience is measured in years. Execution is measured in work.
+            </h2>
+
+          </div>
+
+          <p>
+            I understand why experience matters. Production systems need
+            people who can understand complexity, debug problems, and take
+            ownership beyond a single task.
+          </p>
+
+          <div class="experience-box">
+
+            <div class="experience-title">
+              My approach
+            </div>
+
+            <p>
+              I may not yet have 2 to 5 years of industry experience, but I
+              have built complete projects where I owned the workflow from
+              <strong>data and models to APIs, Docker, and deployable
+              applications.</strong>
+
+              I also completed a four month Data Science internship at
+              Take It Smart, working with Python, Pandas, NumPy,
+              Scikit learn, machine learning models, NLP, preprocessing,
+              evaluation, and model improvement.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section class="section">
+
+          <div class="section-head">
+
+            <span class="number">02</span>
+
+            <h2>
+              Two systems that reflect how I build
+            </h2>
+
+          </div>
+
+
+          <div class="projects">
+
+
+            <!-- CONTEXTENGINE -->
+
+            <article class="project">
+
+              <span class="project-tag">
+                Generative AI
+              </span>
+
+              <h3>
+                ContextEngine
+              </h3>
+
+              <p>
+                A multi agent AI workspace built around LLMs, LangGraph, and
+                Retrieval Augmented Generation. I designed the system around
+                intelligent document retrieval, semantic search, embeddings,
+                and ChromaDB vector indexing.
+              </p>
+
+              <p style="margin-top: 12px;">
+                The backend was built with FastAPI and the application was
+                containerized using Docker and Docker Compose.
+              </p>
+
+              <span class="project-result">
+                LLM → RAG → API → Docker
+              </span>
+
+            </article>
+
+
+            <!-- LUMINAPATH -->
+
+            <article class="project">
+
+              <span class="project-tag">
+                Machine Learning
+              </span>
+
+              <h3>
+                LuminaPath
+              </h3>
+
+              <p>
+                An AI powered retinal disease detection system built with
+                TensorFlow and InceptionV3. The system processes OCT images,
+                performs model inference, generates confidence scores, and
+                produces structured AI assisted medical reports.
+              </p>
+
+              <p style="margin-top: 12px;">
+                I worked on data preparation, model optimization, inference,
+                and application development using Flask.
+              </p>
+
+              <span class="project-result">
+                63% → 84% Accuracy
+              </span>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- TECH STACK -->
+
+        <section class="section">
+
+          <div class="section-head">
+
+            <span class="number">03</span>
+
+            <h2>
+              How my work maps to Klypto
+            </h2>
+
+          </div>
+
+          <p>
+            The part of the role that interests me most is the opportunity to
+            work across the complete AI engineering lifecycle rather than only
+            one layer of it.
+          </p>
+
+
+          <div class="pipeline">
+
+            <div class="pipeline-step">Python</div>
+
+            <div class="pipeline-arrow">›</div>
+
+            <div class="pipeline-step">ML / LLM</div>
+
+            <div class="pipeline-arrow">›</div>
+
+            <div class="pipeline-step">FastAPI</div>
+
+            <div class="pipeline-arrow">›</div>
+
+            <div class="pipeline-step">Docker</div>
+
+            <div class="pipeline-arrow">›</div>
+
+            <div class="pipeline-step">AWS</div>
+
+            <div class="pipeline-arrow">›</div>
+
+            <div class="pipeline-step">Production</div>
+
+          </div>
+
+
+          <div class="stack-grid">
+
+
+            <div class="stack-item">
+
+              <span class="stack-marker"></span>
+
+              <div>
+
+                <h4>Python and ML</h4>
+
+                <p>
+                  Python, Scikit learn, TensorFlow, PyTorch,
+                  Pandas, NumPy, NLP and Computer Vision.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="stack-item">
+
+              <span class="stack-marker"></span>
+
+              <div>
+
+                <h4>Backend and APIs</h4>
+
+                <p>
+                  FastAPI, Flask and REST API development for
+                  production focused AI applications.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="stack-item">
+
+              <span class="stack-marker"></span>
+
+              <div>
+
+                <h4>GenAI and Retrieval</h4>
+
+                <p>
+                  LLMs, RAG, LangChain, LangGraph, LlamaIndex,
+                  embeddings, ChromaDB and FAISS.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="stack-item">
+
+              <span class="stack-marker"></span>
+
+              <div>
+
+                <h4>Engineering and Cloud</h4>
+
+                <p>
+                  Docker, Docker Compose, Git, GitHub, Linux,
+                  AWS EC2 and AWS S3.
+                </p>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </section>
+
+
+        <!-- RESEARCH -->
+
+        <section class="section">
+
+          <div class="section-head">
+
+            <span class="number">04</span>
+
+            <h2>
+              Research and systems thinking
+            </h2>
+
+          </div>
+
+          <div class="research">
+
+            <div class="research-label">
+              Published Research
+            </div>
+
+            <h3>
+              ECHO 7: Privacy Preserving Personal AI
+            </h3>
+
+            <p>
+              I published research on SSRN exploring a local first personal AI
+              architecture focused on privacy preserving AI systems, memory
+              synchronization, and user controlled memory consolidation.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- WHY KLYPTO -->
+
+        <section class="section">
+
+          <div class="section-head">
+
+            <span class="number">05</span>
+
+            <h2>
+              Why Klypto
+            </h2>
+
+          </div>
+
+          <p>
+            I am looking for a role where I can work close to real engineering
+            problems and keep growing by building. Klypto's AI/ML Python
+            Developer role stands out because it covers machine learning,
+            backend systems, cloud infrastructure, APIs, and modern
+            Generative AI.
+          </p>
+
+          <p style="margin-top: 16px;">
+            I am available immediately and fully willing to relocate from
+            Bengaluru to <strong>Mohali, Punjab.</strong> The opportunity to
+            work with a strong team and build real AI systems is what matters
+            most to me.
+          </p>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+          <h2>
+            Ready to contribute. Ready to relocate.
+          </h2>
+
+          <p>
+            I am looking for an opportunity where execution matters. If my
+            projects and technical background align with what Klypto is
+            building, I would value the chance to discuss how I can contribute
+            to the team.
+          </p>
+
+          <a
+            href="mailto:singhmanishofficial102@gmail.com?subject=AI%2FML%20Python%20Developer%20Discussion"
+            class="cta-button"
+          >
+            Start a Conversation
+          </a>
+
+        </section>
+
+
+        <!-- LINKS -->
+
+        <section class="links">
+
+          <div class="links-title">
+            Explore my work
+          </div>
+
+          <div class="link-list">
+
+            <a
+              href="https://manishkumarsingh41.github.io/myportfolio/"
+              target="_blank"
+              class="link"
+            >
+              Portfolio
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1RobzA9cPy6Xbo3zUDUyYmgXk-OTB0fO1/view?usp=sharing"
+              target="_blank"
+              class="link"
+            >
+              Resume
+            </a>
+
+            <a
+              href="https://github.com/Manishkumarsingh41"
+              target="_blank"
+              class="link"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/manish-kumar-singh-5a8162214/"
+              target="_blank"
+              class="link"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="YOUR_SSRN_RESEARCH_PAPER_LINK"
+              target="_blank"
+              class="link"
+            >
+              Research Paper
+            </a>
+
+          </div>
+
+        </section>
+
+      </section>
+
+
+      <!-- FOOTER -->
+
+      <footer class="footer">
+
+        <div class="name">
+          Manish Kumar Singh
+        </div>
+
+        <div class="designation">
+          AI Engineer | Machine Learning | Generative AI
+        </div>
+
+
+        <div class="contact">
+
+          <div>
+            <strong>Phone:</strong>
+
+            <a href="tel:+918539904102">
+              +91 8539904102
+            </a>
+          </div>
+
+
+          <div>
+            <strong>Email:</strong>
+
+            <a href="mailto:singhmanishofficial102@gmail.com">
+              singhmanishofficial102@gmail.com
+            </a>
+          </div>
+
+
+          <div>
+            <strong>Current location:</strong>
+            Bengaluru, India
+          </div>
+
+
+          <div>
+            <strong>Availability:</strong>
+            Immediate | Open to Mohali relocation
+          </div>
+
+        </div>
+
+
+        <div class="footer-note">
+          Application for AI/ML Python Developer at Klypto
+        </div>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
